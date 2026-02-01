@@ -3,40 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Game</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Jephthah Mortoti-Agogyi | Soaring Scholarship</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="screen-active" id="start-screen">
-            <h1>QUIZ TIME!</h1>
-            <p>You're about to crack your brain for this Quiz</p>
-            <button id="start-btn">Start Quiz</button>
-        </div>
-        <div class="screen" id="quiz-screen">
-            <div class="quiz-header">
-                <h1 id="question-text">Question goes here</h1>
-            </div>
-            <div class="quiz-info">
-                <p> Question <span id="cureent-question">1</span> of <span id="total-question">5</span></p>
-                <p>Score: <span id="score">0</span></p>
-            </div>
-            <div class="answers-container" id="answers-container">
-                <!--The answers will be inserted later on-->
-            </div>
-            <div class="progress-bar">
-                <div class="progress" id="progress"></div>
+    <!-- Fixed Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">
+                <span class="brand-initial">J</span>
+                <span class="brand-name">Jephthah Mortoti-Agogyi</span>
+            </a>
+            <div class="nav-menu">
+                <a href="#origin" class="nav-link">Origin</a>
+                <a href="#action" class="nav-link">Action</a>
+                <a href="#impact" class="nav-link">Impact</a>
+                <a href="#future" class="nav-link">Future</a>
             </div>
         </div>
-        <div class="screen" id="result-screen">
-            <h1>QUIZ RESULTS</h1>
-            <div class="results-info">
-                <p>You scored <span id="final-score">0</span> out of <span id="max-score"></span></p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-eyebrow">Soaring Together Scholarship • Lehigh University</div>
+            
+            <h1 class="hero-title">
+                <span class="title-line">The only girl in our class</span>
+                <span class="title-line">was almost like a guy—</span>
+                <span class="title-line highlight">so serious, had no time to dress</span>
+                <span class="title-line highlight">like those business students.</span>
+            </h1>
+
+            <div class="hero-attribution">
+                <div class="attribution-line"></div>
+                <p>My ICT teacher at PRESEC, describing the one woman in our programming class</p>
             </div>
-            <div id="result-message">Good job</div>
+
+            <div class="hero-statement">
+                <p>This comment haunted me. Not because it was cruel, but because it was casual—an accepted truth that to code, women must shed femininity. Three years at an all-boys school taught me exclusion. A gap year teaching myself Python showed me the pattern was everywhere.</p>
+                <p class="statement-bold">So I built something different.</p>
+            </div>
+
+            <a href="#origin" class="scroll-invite">
+                <span>Read the full story</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M8 3V13M8 13L3 8M8 13L13 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </a>
         </div>
-        <button id="restart-btn">Restart Quiz</button>
-        <!--I stopped at 16 mins 8 secs-->
-    </div>
+
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Origin Story -->
+    <section id="origin" class="origin">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">The Pattern I Couldn't Ignore</h2>
+            </div>
+
+            <div class="origin-content">
+                <div class="origin-narrative">
+                    <div class="narrative-block">
+                        <p class="lead-text">After PRESEC, I took a gap year. I taught myself to code—Python, then JavaScript, then everything I could find.</p>
+                        
+                        <div class="tutorial-stack">
+                            <div class="tutorial-item">Mosh Hamedani</div>
+                            <div class="tutorial-item">Traversy Media</div>
+                            <div class="tutorial-item">Corey Schafer</div>
+                            <div class="tutorial-item">freeCodeCamp</div>
+                            <div class="tutorial-item">The Net Ninja</div>
+                        </div>
+
+                        <p class="emphasis-text">Excellent teachers. Every single one, a man.</p>
+                    </div>
+
+                    <div class="narrative-block">
+                        <p>I kept searching. I wanted to see women who coded without compromising who they were. Women who could be technical and still show up as themselves.</p>
+                        
+                        <div class="stat-reveal">
+                            <div class="stat-number">
+                                <span class="number-large">0</span>
+                                <span class="stat-label">Female instructors in my entire self-taught journey</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="narrative-block">
+                        <p class="conclusion-text">The message was clear: this space wasn't built for women. Not because women couldn't code, but because the culture demanded they become someone else to fit in.</p>
+                        <p class="conclusion-text strong">I decided to stop waiting for someone else to fix it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Action Section -->
+    <section id="action" class="action">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Code the Vacation</h2>
+                <p class="section-subtitle">A two-month Python bootcamp. But the curriculum wasn't the revolution—the invitation was.</p>
+            </div>
+
+            <div class="action-content">
+                <div class="strategy-reveal">
+                    <div class="strategy-wrong">
+                        <div class="strategy-label wrong">What I Could Have Done</div>
+                        <p>"Women are welcome here. Come learn Python."</p>
+                    </div>
+
+                    <div class="strategy-arrow">→</div>
+
+                    <div class="strategy-right">
+                        <div class="strategy-label right">What I Actually Did</div>
+                        <p>Asked female friends to create invitation videos saying: <strong>"I'm joining. See you there."</strong></p>
+                    </div>
+                </div>
+
+                <div class="strategy-insight">
+                    <p>Not me, a man, telling women they should code.</p>
+                    <p>Women showing other women that this space was theirs.</p>
+                </div>
+
+                <div class="videos-showcase">
+                    <h3 class="showcase-title">The Invitation</h3>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <video controls>
+                                    <source src="abigail.mp4" type="video/mp4">
+                                    Your browser does not support video.
+                                </video>
+                            </div>
+                            <p class="video-caption">Invitation Video 1</p>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-placeholder">
+                                <div class="play-icon">▶</div>
+                                <video controls>
+                                    <source src="mina.mp4" type="video/mp4">
+                                    Your browser does not support video.
+                                </video>
+                            </div>
+                            <p class="video-caption">Invitation Video 2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-banner">
+                    <div class="result-stat">
+                        <span class="result-number">More women</span>
+                        <span class="result-context">than men enrolled</span>
+                    </div>
+                </div>
+
+                <div class="bootcamp-grid">
+                    <div class="bootcamp-detail">
+                        <span class="detail-value">2 months</span>
+                        <span class="detail-label">Duration</span>
+                    </div>
+                    <div class="bootcamp-detail">
+                        <span class="detail-value">21 students</span>
+                        <span class="detail-label">Participants</span>
+                    </div>
+                    <div class="bootcamp-detail">
+                        <span class="detail-value">2× weekly</span>
+                        <span class="detail-label">Sessions</span>
+                    </div>
+                    <div class="bootcamp-detail">
+                        <span class="detail-value">$4.5</span>
+                        <span class="detail-label">Cost to students</span>
+                    </div>
+                </div>
+
+                
+
+                <div class="documentation">
+                    <img src="Rebecca.jpg" alt="Official letter from NOLAP Technology documenting the bootcamp" class="doc-image">
+                    <p class="doc-caption">Official documentation from NOLAP Technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">What They Built</h2>
+                <p class="section-subtitle">With only fundamentals—loops, lists, conditionals, functions—students created projects I never imagined.</p>
+            </div>
+
+            <div class="projects-showcase">
+                <!-- Featured Projects -->
+                <div class="project-featured">
+                    <div class="project-badge gold">Best Overall Project</div>
+                    <div class="project-content">
+                        <h3 class="project-name">GradeMaster</h3>
+                        <p class="project-author">by Isaac Atoeyine Anafo</p>
+                        <p class="project-description">A flawless academic calculator with dual-path logic for both CWA and GPA systems, complete classification, and modular design. The kind of tool I wish I had in high school.</p>
+                        <div class="project-tags">
+                            <span class="tag">Perfect Logic</span>
+                            <span class="tag">Production-Ready</span>
+                            <span class="tag">Modular Architecture</span>
+                        </div>
+                        
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-row">
+                    <div class="project-card">
+                        <div class="project-badge purple">Most Technical</div>
+                        <h3 class="project-name">Library Management System</h3>
+                        <p class="project-author">by Richmond Frimpong</p>
+                        <p class="project-description">The most complex submission. Full state management, admin roles, payment simulation, and delivery tracking.</p>
+                        <div class="project-tags">
+                            <span class="tag">Nested Data Structures</span>
+                            <span class="tag">Role-Based Access</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-badge teal">Most Creative</div>
+                        <h3 class="project-name">AOM GAMES</h3>
+                        <p class="project-author">by Nkrumah Joel</p>
+                        <p class="project-description">A 5-game arcade with an NSMQ-inspired scoring system. Complete with user authentication and game state persistence.</p>
+                        <div class="project-tags">
+                            <span class="tag">Multi-Game Architecture</span>
+                            <span class="tag">Unique Scoring System</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="project-row">
+                    <div class="project-card">
+                        <div class="project-badge orange">Best Presentation</div>
+                        <h3 class="project-name">LORDISH BANKING</h3>
+                        <p class="project-author">by Azumah Lordaria</p>
+                        <p class="project-description">Zero bugs. Four-step verification. Brute-force protection. Banking done right.</p>
+                        
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-badge pink">Honorable Mention</div>
+                        <h3 class="project-name">REBECCASTYLEZ MATCHER</h3>
+                        <p class="project-author">by Rebecca Antobre</p>
+                        <p class="project-description">Smart outfit recommendations using conditional logic and a feedback learning system.</p>
+
+                    </div>
+                </div>
+
+                <div class="projects-cta">
+                    <a href="https://github.com/Mortoti/code-the-vacation-challenge-2025" class="btn-secondary" target="_blank">
+                        View All 13 Projects on GitHub
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 3L13 10L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Certificate System -->
+            <div class="certificate-system">
+                <div class="cert-grid">
+                    <div class="cert-visual">
+                        <img src="naomi.png" alt="Sample certificate from Code the Vacation bootcamp" class="cert-image">
+                    </div>
+                    <div class="cert-info">
+                        <h3 class="cert-title">The Certificate System</h3>
+                        <p class="cert-description">Built with Google Apps Script and Sheets as the database. No hosting costs, no complex infrastructure—just creative problem-solving.</p>
+                        
+                        <div class="cert-challenge">
+                            <div class="challenge-item">
+                                <span class="challenge-label">The Challenge</span>
+                                <p>Needed verifiable certificates without a hosting budget</p>
+                            </div>
+                            <div class="challenge-item">
+                                <span class="challenge-label">The Solution</span>
+                                <p>Leveraged Google's free infrastructure with unique verification IDs</p>
+                            </div>
+                        </div>
+
+                        <a href="https://bit.ly/4nMiliW" class="btn-outline">Try the Verification System</a>
+                        
+                        <p class="cert-note">This resourcefulness mirrors my entire approach: accessible solutions that don't compromise on professionalism.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Vision -->
+    <section id="future" class="future">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Code Her Future at Lehigh</h2>
+            </div>
+
+            <div class="future-content">
+                <div class="lesson-learned">
+                    <h3 class="lesson-title">What I Learned</h3>
+                    <div class="lesson-text">
+                        <p>Creating gender equity isn't about lowering standards or making special accommodations. It's about intentionally building spaces where everyone belongs from the start.</p>
+                        <p class="lesson-emphasis">When women see other women committed and thriving, they're more likely to join. Male allies should create visibility for women's voices—not speak for them.</p>
+                    </div>
+                </div>
+
+                <div class="vision-proposal">
+                    <h3 class="vision-title">My Vision for Lehigh</h3>
+                    
+                    <div class="vision-statement">
+                        <p class="vision-lead">High school hackathons specifically for young women in tech, with scholarship packages for winners to attend Lehigh.</p>
+                    </div>
+
+                    <div class="vision-grid">
+                        <div class="vision-item">
+                            <div class="vision-icon">🎯</div>
+                            <h4>The Goal</h4>
+                            <p>Make Lehigh synonymous with women in tech—not as the exception, but as the standard.</p>
+                        </div>
+                        <div class="vision-item">
+                            <div class="vision-icon">🤝</div>
+                            <h4>The Role of Men</h4>
+                            <p>Male students as mentors and allies, creating visibility and opportunity without centering ourselves.</p>
+                        </div>
+                        <div class="vision-item">
+                            <div class="vision-icon">📈</div>
+                            <h4>The Progression</h4>
+                            <p>Started with a bootcamp in Ghana. Continue at Lehigh. Scale across West Africa.</p>
+                        </div>
+                        <div class="vision-item">
+                            <div class="vision-icon">🌍</div>
+                            <h4>The Impact</h4>
+                            <p>Every woman who codes without compromising herself creates space for the next one.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="closing-statement">
+                    <blockquote class="final-quote">
+                        <p>Tech has asked women to choose between being themselves and being taken seriously.</p>
+                        <p class="quote-emphasis">I'm building spaces where that choice doesn't exist.</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <h3 class="footer-name">Jephthah Mortoti-Agogyi</h3>
+                <p class="footer-tagline">Building equitable tech education, one space at a time</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="mailto:mortoti.dev@gmail.com" class="footer-link">Email</a>
+                <a href="https://github.com/Mortoti" class="footer-link" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/mortoti/" class="footer-link">LinkedIn</a>
+                <a href="https://bit.ly/4nMiliW" class="footer-link">Verify Certificate</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Soaring Together Scholarship Application • Lehigh University • LIN: 800255681</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
